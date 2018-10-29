@@ -548,6 +548,7 @@ module.exports = {
         },
         reportFiles: [
           '**',
+          '!**/*.json',
           '!**/__tests__/**',
           '!**/?(*.)(spec|test).*',
           '!src/setupProxy.js',
