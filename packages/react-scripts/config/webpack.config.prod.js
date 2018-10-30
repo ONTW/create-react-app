@@ -82,7 +82,9 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
         // Necessary for external CSS imports to work
         // https://github.com/facebook/create-react-app/issues/2677
         ident: 'postcss',
-        config: paths.postcssConfigFile,
+        config: {
+          path: paths.postcssConfigFile,
+        },
         sourceMap: shouldUseSourceMap,
       },
     },
